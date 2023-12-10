@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Even numbers 1 - 100
+
+        // for (let i = 1; i <= 100; i++) if (i % 2 == 0) console.log(i);
+
+        // Guess the number game
+
+        let secretNumber = 42;
+        let guessAttempts = 5;
+
+        while(guessAttempts => 0) 
+        {
+            let guess = parseInt(prompt("Guess a number (1-100): "));
+            if (guess === secretNumber) 
+            {
+                alert("Conguratulations, You guessed it!");
+                break;
+            }
+            else if (guess > secretNumber){
+                guessAttempts--;
+                alert(`Too high ${guessAttempts} guesses left`);
+                
+            } 
+            else {
+                guessAttempts--;
+                alert(`Too low ${guessAttempts} guesses left`);
+            }
+            if (guessAttempts == 0) {
+                alert("You lost!");
+                break;
+            }
+        };
+    </script>
+</body>
+</html>

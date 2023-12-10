@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a username from input for their Account</title>
+</head>
+<body>
+    <script>
+        // Generate a username from input for their Account.
+        const username = prompt("Enter your name: ").toLowerCase().replaceAll(" ", "");
+        
+        if (username == "") alert("Please enter your name!");
+
+        else {
+            const usernameLength = username.length;
+            const usernameForAccountId = "@" + username + usernameLength;
+            alert(usernameForAccountId);
+        }
+
+    </script>
+</body>
+</html>
