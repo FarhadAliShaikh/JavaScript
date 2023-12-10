@@ -13,7 +13,7 @@ const prices = [100,200,300,400,500,600,700,800,900,1000]
 let afterDiscountPrice = [] 
 
 for (let i = 0; i < prices.length; i++) {
-     prices[i] -= (prices[i] * 0.1)
+     prices[i] -= (prices[i] / 10)
     afterDiscountPrice.push(prices[i]) 
 }
 
