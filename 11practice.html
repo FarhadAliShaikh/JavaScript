@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        // In body there are 3 divs. Access them & add some unique text to each of them.
+
+        let divs = document.querySelectorAll(".box");
+        divs[0].innerText = "First Box";
+        divs[1].innerText = "Second Box";
+        divs[2].innerText = "Third Box";
+
+
+        // create a heading element with text "Hello World" and append it to the body of the document and also append "from Js" to the heading element.
+
+        const h2 = document.createElement('h2');
+        h2.innerText = 'Hello World';
+        document.body.appendChild(h2);
+        h2.append(" from Js");
+
+        // create 3 divs with common class "box" and append them to the body of the document. 
+
+        const div1 = document.createElement("div");
+        const div2 = document.createElement("div");
+        const div3 = document.createElement("div");
+
+        div1.classList.add("box");
+        div2.classList.add("box");
+        div3.classList.add("box");
+
+        div1.innerText = "This is div1";
+        div2.innerText = "This is div2";
+        div3.innerText = "This is div3";
+
+        document.body.appendChild(div1);
+        document.body.appendChild(div2);
+        document.body.appendChild(div3);
+
+    </script>
+</body>
+</html>
