@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .para {
+        color: red;
+        font-size: 22px;
+    }
+
+    .para2 {
+        background-color: yellow;
+    }
+
+</style>
+
+<body>
+
+    <p class="para">This is a Paragraph tag.</p>
+
+
+    <script>
+        // create a new element button and add some text and style and append in the body as a first child.
+
+        const button = document.createElement('button');
+        button.innerText = 'Click me';
+        button.style.color = "white";
+        button.style.backgroundColor = "red";
+        document.body.prepend(button);
+
+
+        // In the html, we want to add a new class para2 in the p tag.
+        let para = document.querySelector('.para');
+        para.classList.add('para2');
+
+    </script>
+</body>
+</html>
