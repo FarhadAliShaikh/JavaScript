@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle mode button</title>
+</head>
+<body>
+    <button>Change mode</button>
+
+    <script>
+        const button = document.querySelector('button');
+        const body = document.querySelector('body');
+        
+        button.addEventListener('click', (e) => {
+            if(body.style.backgroundColor == 'white'){
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+            }
+            else{
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
+            }
+        })
+    </script>
+</body>
+</html>
