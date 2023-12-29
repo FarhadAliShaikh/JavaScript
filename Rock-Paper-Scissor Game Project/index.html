@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body >
+    <h1 class="mainHeading">Rock Paper Scissor Game</h1>
+    <div class="mainContainer">
+        <div class="imagesContainer">
+            <div id="rock">
+                <button class="choiceBtn" id="rock">
+                    <img class="img" src="./images/rock.png" alt="rock">
+                </button>
+                <div class="imgText">Rock</div>
+            </div>
+            <div id="paper">
+                <button class="choiceBtn" id="paper">
+                    <img class="img" src="./images/paper.png" alt="paper">
+                </button>
+                <div class="imgText">Paper</div>
+            </div>
+            <div id="scissor">
+                <button class="choiceBtn" id="scissor">
+                    <img class="img" src="./images/scissors.png" alt="scissor" >
+                </button>
+                <div class="imgText">Scissor</div>
+            </div>
+        </div>
+
+        <div class="scoreContainer">
+            <div class="userDisplay">
+                UserScore: <span id="userScore">0</span>
+                <div id="userChoice"> User Choice</div>
+            </div>
+            <div class="cmptDisplay">
+                ComputerScore: <span id="cmptScore">0</span>
+                <div id="cmptChoice"> Computer Choice </div>
+            </div>
+        </div>
+        
+        <div class="resultDisplay">
+            <span id="result">Result</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
