@@ -3,6 +3,8 @@ const input = document.getElementById("inputNum");
 const submitButton = document.getElementById("submitBtn");
 const setTimer = document.getElementById("timer");
 
+// time method used for current time
+//start
 function time() {
     const currTime = new Date();
     // console.log(currTime);
@@ -10,9 +12,10 @@ function time() {
     // console.log(time);
     currentTime.innerText = `Now, ${time}`
 }
-
 // setInterval(time, 1000)
+//end
 
+// stop watch
 submitButton.addEventListener('click', () => {
     let timeLimit = input.value;
     let interval = setInterval(timer, 1000);
@@ -25,3 +28,4 @@ submitButton.addEventListener('click', () => {
             timeLimit--;
         }
 })
+// end
